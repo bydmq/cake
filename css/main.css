@@ -83,7 +83,16 @@ a {
   color: #2d2d2b;
   -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
   cursor: pointer;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .header {
@@ -407,7 +416,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 834px;
-  max-height: 600px;
+  height: 600px;
   margin: 0 auto;
   background-image: url(../img/callback-bg.png);
   background-size: 100%;

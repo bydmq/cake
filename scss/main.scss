@@ -66,7 +66,11 @@ a{
     font-family: 'Montserrat', sans-serif;
     color: #2d2d2b;
     box-shadow: 10px 10px 15px rgba(0,0,0,.15);
+    transition: transform .3s ease-in-out;
     cursor: pointer;
+    &:hover{
+        transform: translateY(-2px);
+    }
 }
 .header{
     position: relative;
@@ -291,7 +295,7 @@ a{
     justify-content: center;
     align-items: center;
     width: 834px;
-    max-height: 600px;
+    height: 600px;
     margin: 0 auto;
     background-image: url(../img/callback-bg.png);
     background-size: 100%;
