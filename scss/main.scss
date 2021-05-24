@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Marker Felt Wide";
+    font-style: normal;
+    font-weight: 400;
+    src: 
+        url("/fonts/MarkerFeltWide.woff2") format("woff2"),
+        url("/fonts/MarkerFeltWide.woff") format("woff");
+}  
 html{
     box-sizing: border-box;
 }
@@ -46,6 +54,7 @@ a{
 .title{
     margin: 0;
     font-size: 36px;
+    text-transform: uppercase;
     text-align: center;
     color: #df8f9d;
 }
@@ -54,6 +63,7 @@ a{
     padding: 0;
     background-color: #9af48b;
     font-family: 'Montserrat', sans-serif;
+    color: #2d2d2b;
     cursor: pointer;
 }
 .header{
@@ -116,6 +126,8 @@ a{
         margin: 0;
         margin-bottom: 45px;
         font-size: 25px;
+        text-transform: uppercase;
+        color: #2d2d2b;
     }
     &__btn{
         padding: 10px 50px;
@@ -159,6 +171,7 @@ a{
         margin-right: 60px;
         font-weight: 500;
         font-size: 26px;
+        text-transform: uppercase;
         color: #000;
     }
     &__list{
@@ -179,8 +192,26 @@ a{
         padding: 35px 0;
     }
     &__title{
-        padding-left: 35px;
+        margin: 0;
+        margin-bottom: 50px;
+        padding-left: 40px;
+        font-family: 'Marker Felt Wide', sans-serif;
         font-size: 23px;
         color: #df8f9d;
+    }
+    &__descr{
+        margin: 0;
+        margin-bottom: 65px;
+        padding-left: 30px;
+        padding-right: 20px;
+        font-weight: 500;
+        font-size: 9px;
+        color: #000;
+    }
+    &__btn{
+        padding: 10px 30px;
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: uppercase;
     }
 }
