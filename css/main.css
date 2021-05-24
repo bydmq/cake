@@ -81,6 +81,8 @@ a {
   background-color: #9af48b;
   font-family: 'Montserrat', sans-serif;
   color: #2d2d2b;
+  -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
@@ -157,6 +159,30 @@ a {
   color: #4f4f4f;
 }
 
+.nav {
+  position: relative;
+  margin-right: 95px;
+  z-index: 10;
+}
+
+.nav__link {
+  border-bottom: 3px solid transparent;
+  font-weight: 500;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: #4f4f4f;
+  -webkit-transition: border-bottom .3s ease-in-out;
+  transition: border-bottom .3s ease-in-out;
+}
+
+.nav__link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.nav__link:hover {
+  border-bottom: 3px solid #df8f9d;
+}
+
 .slider {
   position: relative;
   display: -webkit-box;
@@ -204,29 +230,6 @@ a {
   margin-right: -35px;
 }
 
-.nav {
-  position: relative;
-  margin-right: 95px;
-  z-index: 10;
-}
-
-.nav__link {
-  font-weight: 500;
-  font-size: 27px;
-  text-transform: uppercase;
-  color: #4f4f4f;
-  -webkit-transition: border-bottom .3s ease-in-out;
-  transition: border-bottom .3s ease-in-out;
-}
-
-.nav__link:not(:last-child) {
-  margin-right: 15px;
-}
-
-.nav__link:hover {
-  border-bottom: 3px solid #df8f9d;
-}
-
 .catalog {
   position: relative;
   margin-bottom: 250px;
@@ -248,11 +251,18 @@ a {
 }
 
 .catalog__menu-link {
+  border-bottom: 3px solid transparent;
   margin-right: 60px;
   font-weight: 500;
   font-size: 26px;
   text-transform: uppercase;
+  -webkit-transition: border-bottom .3s ease-in-out;
+  transition: border-bottom .3s ease-in-out;
   color: #000;
+}
+
+.catalog__menu-link:hover {
+  border-bottom: 3px solid #df8f9d;
 }
 
 .catalog__list {
@@ -588,7 +598,11 @@ a {
     margin-right: 0;
   }
   .nav__link {
+    border-bottom: 1px solid transparent;
     font-size: 8px;
+  }
+  .nav__link:hover {
+    border-bottom: 1px solid #df8f9d;
   }
   .slider__title {
     margin-bottom: 5px;
@@ -625,8 +639,12 @@ a {
     margin-bottom: 20px;
   }
   .catalog__menu-link {
+    border-bottom: 1px solid transparent;
     margin-right: 0;
     font-size: 10px;
+  }
+  .catalog__menu-link:hover {
+    border-bottom: 1px solid #df8f9d;
   }
   .catalog__list {
     -ms-grid-columns: 1fr;
