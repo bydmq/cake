@@ -164,6 +164,7 @@ a{
     }
 }
 .catalog{
+    position: relative;
     margin-bottom: 250px;
     &__title{
         margin-bottom: 50px;
@@ -185,6 +186,11 @@ a{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 40px;
+    }
+    &__decor{
+        position: absolute;
+        left: -75px;
+        bottom: -265px;
     }
 }
 .product{

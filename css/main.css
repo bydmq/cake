@@ -228,6 +228,7 @@ a {
 }
 
 .catalog {
+  position: relative;
   margin-bottom: 250px;
 }
 
@@ -260,6 +261,12 @@ a {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
+}
+
+.catalog__decor {
+  position: absolute;
+  left: -75px;
+  bottom: -265px;
 }
 
 .product {
