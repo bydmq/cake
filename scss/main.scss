@@ -284,9 +284,10 @@ a{
     justify-content: center;
     align-items: center;
     width: 834px;
-    height: 600px;
+    max-height: 600px;
     margin: 0 auto;
     background-image: url(../img/callback-bg.png);
+    background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     &__inner{
@@ -347,6 +348,9 @@ a{
         font-size: 19px;
         text-transform: uppercase;
         color: #000;
+    }
+    &__list{
+        display: flex;
     }
     &__social-link{
         &:not(:last-child){

@@ -1,4 +1,7 @@
 @media(max-width:375px){
+    body{
+        background-color: transparent;
+    }
     .title{
         font-size: 13px;
     }
@@ -8,6 +11,8 @@
         background-image: none;
     }
     .header{
+        margin-bottom: 30px;
+        padding-top: 15px;
         &__inner{
             padding-bottom: 70px;
         }
@@ -27,6 +32,11 @@
                 right: -40px;
                 bottom: -30px;
                 width: 93px;
+            }
+            &--three{
+                left: -20px;
+                bottom: -90px;
+                width: 110px;
             }
         }
     }
@@ -58,6 +68,177 @@
         &__img{
             width: 202px;
             margin-right: -10px;
+        }
+    }
+    .catalog{
+        margin-bottom: 40px;
+        &__title{
+            margin-bottom: 5px;
+        }
+        &__menu{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        &__menu-link{
+            margin-right: 0;
+            font-size: 10px;
+        }
+        &__list{
+            grid-template-columns: 1fr;
+            grid-gap: 15px;
+            align-self: center;
+        }
+        &__decor{
+            left: 5px;
+            bottom: -80px;
+            width: 103px;
+        }
+    }
+    .product{
+        max-width: 300px;
+        margin: 0 auto;
+        &__img{
+            width: 140px;
+        }
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__title{
+            margin-bottom: 25px;
+            padding-left: 0;
+            font-size: 13px;
+        }
+        &__descr{
+            margin-bottom: 35px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 5px;
+        }
+        &__btn{
+            padding: 5px 15px;
+            font-size: 10px;
+        }
+    }
+    .about{
+        margin-bottom: 70px;
+        &__list{
+            padding: 0;
+        }
+        &__item{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto 20px !important; 
+            &:nth-child(1), &:nth-child(2){
+                margin-bottom: 0;
+            }
+            &:nth-child(2n){
+                & .about__item-img{
+                    order: 2;
+                }
+                & .about__item-descr{
+                    order: 1;
+                }
+            }
+        }
+        &__item-img{
+            width: 110px;
+        }
+        &__item-descr{
+            width: 160px;
+            font-size: 9px;
+        }
+        &__decor{
+            left: auto;
+            right: -17px;
+            bottom: -65px;
+            height: 73px;
+        }
+    }
+    .callback{
+        margin-bottom: 45px;
+        &__title{
+            margin-bottom: 65px;
+        }
+        &__decor{
+            display: none;
+        }
+    }
+    .callback-form{
+        width: 245px;
+        height: 177px;
+        background-size: 100%;
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        &__input{
+            max-width: 150px;
+            height: 24px;
+            margin-bottom: 10px;
+            font-size: 7px;
+            &::placeholder{
+                font-size: 7px;
+            }
+        }
+        &__btn{
+            padding: 5px 30px;
+            font-size: 7px;
+        }
+        &__decor{
+            &--left{
+                top: -45px;
+                left: -5px;
+                width: 97px;
+            }
+            &--right{
+                width: 44px;
+                right: 0;
+                bottom: 45px;
+            }
+        }
+    }
+    .footer{
+        padding: 20px 0 15px;
+        &__social{
+            margin-left: 80px;
+            margin-right: 15px;
+        }
+        &__social-title{
+            margin-bottom: 15px;
+            font-size: 6px;
+        }
+        &__social-link{
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+        &__social-img{
+            max-width: 15px;
+            max-height: 15px;
+        }
+        &__logo{
+            margin-right: 10px;
+        }
+        &__contacts-item{
+            font-size: 6px;
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+        }
+        &__decore{
+            top: -30px;
+            left: -10px;
+            height: 99px;
         }
     }
 }
