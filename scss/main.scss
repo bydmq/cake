@@ -165,6 +165,34 @@ a{
         font-size: 20px;
         color: #2d2d2b;
     }
+    &__btn-arrow{
+        position: absolute;
+        width: 15px;
+        height: 26px;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        &--prev{
+            top: 200px;
+            left: 360px;
+            background-image: url(../img/arrow.png);
+            transform: rotate(180deg);
+            &:hover{
+                background-image: url(../img/arrow-active.png);
+                transform: rotate(0);
+            }
+        }
+        &--next{
+            top: 200px;
+            left: 385px;
+            background-image: url(../img/arrow.png);
+            &:hover{
+                background-image: url(../img/arrow-active.png);
+                transform: rotate(180deg);
+            }
+        }
+    }
     &__img{
         margin-right: -35px;
     }
@@ -239,6 +267,16 @@ a{
         font-weight: 400;
         font-size: 18px;
         text-transform: uppercase;
+    }
+    &__decor{
+        position: absolute;
+        &--first{
+            display: none;
+        }
+        &--second{
+            top: 625px;
+            right: 0;
+        }
     }
 }
 .about{
@@ -381,7 +419,7 @@ a{
             margin-bottom: 20px;
         }
     }
-    &__decore{
+    &__decor{
         position: absolute;
         top: -75px;
         left: -160px;
