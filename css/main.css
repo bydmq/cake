@@ -60,7 +60,9 @@ a {
 }
 
 .title {
+  margin: 0;
   font-size: 36px;
+  text-align: center;
   color: #df8f9d;
 }
 
@@ -73,6 +75,7 @@ a {
 }
 
 .header {
+  margin-bottom: 175px;
   padding-top: 60px;
 }
 
@@ -160,19 +163,10 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .slider__title {
-  margin: 0;
   margin-bottom: 15px;
-  font-size: 36px;
-  color: #df8f9d;
 }
 
 .slider__descr {
@@ -213,6 +207,28 @@ a {
 
 .nav__link:hover {
   border-bottom: 3px solid #df8f9d;
+}
+
+.catalog__title {
+  margin-bottom: 50px;
+}
+
+.catalog__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 40px;
+  margin-bottom: 55px;
+}
+
+.catalog__menu-link {
+  margin-right: 60px;
+  font-weight: 500;
+  font-size: 26px;
+  color: #000;
 }
 
 .catalog__list {

@@ -44,7 +44,9 @@ a{
     justify-content: center;
 }
 .title{
+    margin: 0;
     font-size: 36px;
+    text-align: center;
     color: #df8f9d;
 }
 .btn{
@@ -55,6 +57,7 @@ a{
     cursor: pointer;
 }
 .header{
+    margin-bottom: 175px;
     padding-top: 60px;
     &__inner{
         position: relative;
@@ -105,14 +108,9 @@ a{
     &__inner{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     &__title{
-        margin: 0;
         margin-bottom: 15px;
-        font-size: 36px;
-        color: #df8f9d;
     }
     &__descr{
         margin: 0;
@@ -148,6 +146,21 @@ a{
     }
 }
 .catalog{
+    &__title{
+        margin-bottom: 50px;
+    }
+    &__menu{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 40px;
+        margin-bottom: 55px;
+    }
+    &__menu-link{
+        margin-right: 60px;
+        font-weight: 500;
+        font-size: 26px;
+        color: #000;
+    }
     &__list{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
