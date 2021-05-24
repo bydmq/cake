@@ -32,9 +32,10 @@ a{
     margin: 0 auto;
     padding: 0 15px;
     background-color: #fff;
-    background-image: url(../img/header-bg.png);
+    background-image: url(../img/header-bg-top.png);
     background-position: top right;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 .container{
     width: 100%;
@@ -67,6 +68,7 @@ a{
     cursor: pointer;
 }
 .header{
+    position: relative;
     margin-bottom: 175px;
     padding-top: 60px;
     &__inner{
@@ -106,6 +108,10 @@ a{
         &--second{
             right: -140px;
             bottom: -160px;
+        }
+        &--three{
+            left: -160px;
+            bottom: -380px;
         }
     }
 }
@@ -158,6 +164,7 @@ a{
     }
 }
 .catalog{
+    margin-bottom: 250px;
     &__title{
         margin-bottom: 50px;
     }
@@ -181,8 +188,10 @@ a{
     }
 }
 .product{
+    position: relative;
     display: flex;
     max-width: 550px;
+    z-index: 10;
     &__img{
         margin-right: 5px;
     }

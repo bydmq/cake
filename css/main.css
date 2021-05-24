@@ -39,9 +39,10 @@ a {
   margin: 0 auto;
   padding: 0 15px;
   background-color: #fff;
-  background-image: url(../img/header-bg.png);
+  background-image: url(../img/header-bg-top.png);
   background-position: top right;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .container {
@@ -84,6 +85,7 @@ a {
 }
 
 .header {
+  position: relative;
   margin-bottom: 175px;
   padding-top: 60px;
 }
@@ -148,6 +150,11 @@ a {
 .header__decor--second {
   right: -140px;
   bottom: -160px;
+}
+
+.header__decor--three {
+  left: -160px;
+  bottom: -380px;
 }
 
 .slider {
@@ -220,6 +227,10 @@ a {
   border-bottom: 3px solid #df8f9d;
 }
 
+.catalog {
+  margin-bottom: 250px;
+}
+
 .catalog__title {
   margin-bottom: 50px;
 }
@@ -252,10 +263,12 @@ a {
 }
 
 .product {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 550px;
+  z-index: 10;
 }
 
 .product__img {
