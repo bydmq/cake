@@ -36,7 +36,7 @@ a {
 
 .wrapper {
   max-width: 1270px;
-  margin: 0 auto;
+  margin: 70px auto 100px;
   padding: 0 15px;
   background-color: #fff;
   background-image: url(../img/header-bg-top.png);
@@ -111,33 +111,6 @@ a {
   padding: 10px 0;
 }
 
-.header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__logo-img {
-  max-width: 68px;
-}
-
-.header__logo-text {
-  font-weight: 500;
-  font-size: 27px;
-  text-transform: uppercase;
-  color: #4f4f4f;
-}
-
 .header__decor {
   position: absolute;
 }
@@ -155,6 +128,33 @@ a {
 .header__decor--three {
   left: -160px;
   bottom: -380px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__img {
+  max-width: 68px;
+}
+
+.logo__text {
+  font-weight: 500;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: #4f4f4f;
 }
 
 .slider {
@@ -312,4 +312,58 @@ a {
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
+}
+
+.footer {
+  background-color: #ffd6dd;
+  margin: 0 -15px;
+  padding: 60px 0 65px;
+}
+
+.footer__inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social {
+  margin-left: 200px;
+  margin-right: 60px;
+}
+
+.footer__social-title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.footer__social-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__logo {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 20px;
+}
+
+.footer__contacts-item {
+  margin: 0;
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing: -1px;
+}
+
+.footer__contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer__decore {
+  position: absolute;
+  top: -75px;
+  left: -160px;
 }
