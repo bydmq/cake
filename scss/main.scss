@@ -230,6 +230,41 @@ a{
         text-transform: uppercase;
     }
 }
+.about{
+    position: relative;
+    margin-bottom: 240px;
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 110px;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        max-width: 460px;
+        &:nth-child(1), &:nth-child(2){
+            margin-bottom: 90px;
+        }
+    }
+    &__item-img{
+        margin-right: 10px;
+    }
+    &__item-descr{
+        margin: 0;
+        font-weight: 500;
+        font-size: 13px;
+        color: #000;
+    }
+    &__decor{
+        position: absolute;
+        left: -110px;
+        bottom: -220px;
+    }
+}
 .footer{
     background-color: #ffd6dd;
     margin: 0 -15px;
