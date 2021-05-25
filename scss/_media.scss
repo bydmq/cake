@@ -17,6 +17,12 @@
             margin-bottom: 80px;
             padding-bottom: 120px;
         }
+        &__top{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
         &__decor{
             &--first{
                 top: -35px;
@@ -36,6 +42,7 @@
         }
     }
     .logo{
+        margin-bottom: 20px;
         &__img{
             width: 40px;
         }
@@ -232,12 +239,6 @@
         padding-top: 15px;
         &__inner{
             padding-bottom: 70px;
-        }
-        &__top{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
         }
         &__decor{
             &--first{
