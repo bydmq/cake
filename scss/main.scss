@@ -1,3 +1,4 @@
+@import "./normalize";
 @font-face {
     font-family: "Marker Felt Wide";
     font-style: normal;
@@ -15,7 +16,6 @@ html{
     box-sizing: inherit;
 }
 body{
-    margin: 0;
     background-color: #fcf0f3;
     font-family: 'Montserrat', sans-serif;
 }
@@ -164,6 +164,7 @@ a{
         padding: 10px 50px;
         font-weight: 400;
         font-size: 20px;
+        white-space: nowrap;
         color: #2d2d2b;
     }
     &__btn-arrow{
@@ -206,8 +207,7 @@ a{
     }
     &__menu{
         display: flex;
-        justify-content: flex-end;
-        margin-right: 40px;
+        justify-content: center;
         margin-bottom: 55px;
     }
     &__menu-link{
